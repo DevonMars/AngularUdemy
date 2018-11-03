@@ -14,6 +14,8 @@ import {
 import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { PostsService } from './posts/posts.service';
+import { AppRoutingModule } from './app-routing.module';
+
 
 
 
@@ -27,6 +29,7 @@ import { PostsService } from './posts/posts.service';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
