@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
@@ -13,7 +14,8 @@ mongoose.connect('mongodb+srv://devAdmin:srlUZPuUbRmko0mn@cluster0-bxeix.mongodb
 });
 
 app.use(bodyparser.json());
-//app.use(bodyparser.urlencoded({extended: false}))
+app.use(bodyparser.urlencoded({extended: false}))
+app.use("/images", express.static(path.join("Backend/images")));
 
 
 app.use((req, res, next) => {
