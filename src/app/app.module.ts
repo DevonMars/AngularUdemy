@@ -11,6 +11,9 @@ import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { PostsService } from './posts/posts.service';
 import { AppRoutingModule } from './app-routing.module';
+import { AuthComponent } from './auth/auth.component';
+import { SingupComponent } from './auth/singup/singup.component';
+import { LoginComponent } from './auth/login/login.component';
 
 
 
@@ -21,7 +24,10 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     PostCreateComponent,
     HeaderComponent,
-    PostListComponent
+    PostListComponent,
+    AuthComponent,
+    SingupComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
